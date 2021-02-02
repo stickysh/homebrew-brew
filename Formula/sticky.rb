@@ -5,5 +5,10 @@ class Sticky < Formula
 	sha256 "d250edee5a099a19746d75ecf9b697296323fa4d8344ea0c7e9a699bf58ba797"
 	
 	def install
+  	  bin.install "a.out" => "awk"	
+	end
+	
+	test do
+    		system bin/"sticky", "version"
 	end
 end
