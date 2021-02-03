@@ -1,14 +1,13 @@
 class Sticky < Formula
 	desc "Use this to build automation te ease your life" 
 	homepage "https://sticky.sh"
-	url "https://assets.sticky.sh/cli/sticky-v0.9-alpha/sticky-v0.9-alpha.tar.xz"
-	sha256 "d250edee5a099a19746d75ecf9b697296323fa4d8344ea0c7e9a699bf58ba797"
+	url "https://assets.sticky.sh/cli/sticky-v0.9-alpha/sticky-v0.9.tar.xz"
+	sha256 "bc5fe8ae2759725ad67f5cfef0d87bdd5b4a49a5ec1095c138798509c0c47188"
 	
 	def install
-  	  bin.install "a.out" => "awk"	
-	end
+  	end
 	
 	test do
-    		system bin/"sticky", "version"
+        system bin/"sticky", "version"
 	end
 end
