@@ -5,7 +5,7 @@ class Sticky < Formula
 	sha256 "bc5fe8ae2759725ad67f5cfef0d87bdd5b4a49a5ec1095c138798509c0c47188"
 	
 	def install
-	    bin.install_symlink "bin/sticky"
+	    bin.install "bin/sticky"
   	end
 	
 	test do
